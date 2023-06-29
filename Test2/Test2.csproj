@@ -137,9 +137,27 @@
     <Compile Include="Migrations\202306281541511_Initial.designer.cs">
       <DependentUpon>202306281541511_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202306290416393_DateChanged.cs" />
+    <Compile Include="Migrations\202306290416393_DateChanged.designer.cs">
+      <DependentUpon>202306290416393_DateChanged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202306290418489_DateTypeChanged.cs" />
+    <Compile Include="Migrations\202306290418489_DateTypeChanged.designer.cs">
+      <DependentUpon>202306290418489_DateTypeChanged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202306290507113_PhoneNumberDataTypeChanged.cs" />
+    <Compile Include="Migrations\202306290507113_PhoneNumberDataTypeChanged.designer.cs">
+      <DependentUpon>202306290507113_PhoneNumberDataTypeChanged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202306290518311_PhoneNumberChanged.cs" />
+    <Compile Include="Migrations\202306290518311_PhoneNumberChanged.designer.cs">
+      <DependentUpon>202306290518311_PhoneNumberChanged.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Designations.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\EmployeeDetail.cs" />
+    <Compile Include="Models\EmployeePerDesignation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -200,6 +218,8 @@
     <Content Include="Views\Designation\Details.cshtml" />
     <Content Include="Views\Designation\Edit.cshtml" />
     <Content Include="Views\Designation\Index.cshtml" />
+    <Content Include="Views\Employee\LinqQuery1.cshtml" />
+    <Content Include="Views\Employee\LinqQuery2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -234,6 +254,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202306281541511_Initial.resx">
       <DependentUpon>202306281541511_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202306290416393_DateChanged.resx">
+      <DependentUpon>202306290416393_DateChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202306290418489_DateTypeChanged.resx">
+      <DependentUpon>202306290418489_DateTypeChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202306290507113_PhoneNumberDataTypeChanged.resx">
+      <DependentUpon>202306290507113_PhoneNumberDataTypeChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202306290518311_PhoneNumberChanged.resx">
+      <DependentUpon>202306290518311_PhoneNumberChanged.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

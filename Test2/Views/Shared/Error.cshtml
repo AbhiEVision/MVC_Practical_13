@@ -1,13 +1,28 @@
-﻿<!DOCTYPE html>
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Error</title>
+	<meta name="viewport" content="width=device-width" />
+	<title>Error</title>
+
+	@Styles.Render("~/Content/css")
+	@Scripts.Render("~/bundles/modernizr")
+
 </head>
 <body>
-    <hgroup>
-        <h1>Error.</h1>
-        <h2>An error occurred while processing your request.</h2>
-    </hgroup>
+	<div class="d-flex justify-content-center text-center text-danger" style="padding-top:100px">
+
+		<h1>404 Requested Data is not Available!😢</h1>
+
+	</div>
+
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/bootstrap")
+
 </body>
 </html>

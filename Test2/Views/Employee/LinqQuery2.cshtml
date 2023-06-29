@@ -1,0 +1,37 @@
+﻿@model IQueryable<Test2.Models.EmployeePerDesignation>
+
+@{
+	ViewBag.Title = "LinqQuery2";
+}
+
+<h2>Employee in Designations</h2>
+
+@Html.ActionLink("Home", "Index", string.Empty, new { @class = "btn btn-success" })
+
+
+<table class="table table-light table-striped text-center mt-2">
+	<thead class="table-dark">
+
+		<tr>
+			<td>
+				Designation Name
+			</td>
+			<td>
+				Employee Count
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					@item.Key
+				</td>
+				<td>
+					@item.Value
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

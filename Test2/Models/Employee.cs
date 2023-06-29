@@ -22,12 +22,14 @@ namespace Test2.Models
 		public string LastName { get; set; }
 
 		[Required]
+		[Column(TypeName = "Date")]
 		[DataType(dataType: DataType.Date), DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
 		public DateTime DOB { get; set; }
 
 		[Required]
 		[DisplayName("Mobile Number")]
-		[StringLength(10)]
+		[StringLength(10, MinimumLength = 10)]
+		[Phone]
 		public string MobileNo { get; set; }
 
 		[StringLength(100)]
